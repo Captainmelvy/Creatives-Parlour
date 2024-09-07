@@ -1,0 +1,1211 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+.background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+ 
+
+.navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    margin-bottom: -10vh;
+    backdrop-filter: blur(5px); /* Optional: for a blurred background effect */
+}
+
+.navbar.solid {
+    background-color: black; /* Solid black background when scrolled */
+}
+
+
+.logo img {
+    width: 40%;
+    height: auto;
+    margin-left: 10vh;
+}
+
+.nav {
+    display: flex;
+    list-style: none;
+    padding: 10px;
+    margin-right: 40px;
+    float: right;
+}
+
+.navlink a{
+    margin-left: 20px;
+    cursor: pointer;
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 10px;
+    transition: 0.4s ease;
+}
+
+.navlink a:hover {
+    color: orange;
+    border: 1px solid orange;
+    text-decoration: none;
+}
+#menu-toggle{
+    display: none;
+}
+
+.container1{
+    width:100%;
+    position: relative;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.home {
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+
+.title {
+    font-size: 100px;
+    margin: 0;
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.motto {
+    font-size: 50px;
+    margin: 10px 0;
+    font-weight: 200;
+    font-family: "Cinzel", serif;
+}
+
+.scroll {
+    cursor: pointer;
+    margin-top: 20vh;
+    margin-bottom: -20vh;
+}
+
+
+.arts {
+    background-color: #F3DEBA;
+    padding: 50px 20px;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #FFF5E1;
+    font-weight: 200;
+}
+
+.arts h2 {
+    font-weight: 200;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.arts .p {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 20vh;
+    margin-left: 30vh;
+    margin-right: 30vh;
+}
+
+.mvc .mvch {
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-weight: 900;
+    color: #000;
+}
+
+.mvc .mvcp {
+    font-size: 28px;
+    color: #52504d;
+    margin: 0;
+    text-align: center;
+}
+
+.mvc {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10vh;
+}
+
+.mvc div {
+    flex: 1;
+    margin: 0 10px;
+    padding: 20px;
+    height: 30vh;
+    border-radius: 5px;
+    background-color: #FEFBE9;
+    border-radius: 56px 98px 106px 47px / 15px 66px 14px 100px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    transition: background-color 0.3s ease;
+}
+
+.mvc.corevalues{
+    margin-top: 10vh;
+}
+
+.mvc div:hover {
+    background-color: #F6E6C2;
+    transform: scale(1.1) translateZ(50px); /* Scales the div to make it appear larger and moves it forward */
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    transform-origin: center; /* Keeps the element's center as the focal point for the scaling */
+}
+
+
+.aboutus{
+    background-color: #FEFAE0;
+    padding: 5vh 20vh;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    color: #000;  
+}
+
+.aboutus h2{
+    font-size: 30px;
+    font-weight: 700;
+}
+.aboutus p{
+    margin-top: 7vh;
+    font-size: 30px;
+    font-weight: 200;
+}
+
+.abt{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.abtpic{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: -10vh;
+}
+
+.abti1 img {
+    width: 30vh;
+    margin-top: 30vh;
+    position: relative; /* Ensures z-index takes effect */
+    z-index: 2; /* Higher z-index value */
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.abti2 img {
+    width: 50vh;
+    margin-bottom: 30vh;
+    margin-left: -10vh;
+    position: relative; /* Ensures z-index takes effect */
+    z-index: 1; /* Lower z-index value */
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.abti1 img:hover {
+    transform: scale(1.1) translateZ(50px); /* Scales the div to make it appear larger and moves it forward */
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    transform-origin: center; /* Keeps the element's center as the focal point for the scaling */
+
+}
+
+.abti2 img:hover {
+    transform: scale(1.1) translateZ(50px); /* Scales the div to make it appear larger and moves it forward */
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    transform-origin: center; /* Keeps the element's center as the focal point for the scaling */
+
+}
+
+
+.abtp .abtp1 {
+    margin-top: 0vh;
+    margin-left: 3vh;
+}
+.abtp .abtp2 {
+    margin-top: 0vh;
+    margin-left: 3vh;
+}
+
+.horizon{
+    background-color: #FEFAE0;
+    padding: 5vh 20vh;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+}
+.services{
+    background-color: #FEFAE0;
+    padding: 5vh 20vh;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+}
+
+.ml5 {
+    position: relative;
+    font-weight: 300;
+    font-size: 7.5em;
+    color: #000;
+  }
+  
+  .ml5 .text-wrapper {
+    position: relative;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    padding-top: 0.1em;
+    padding-right: 0.05em;
+    padding-left: 0.05em;
+    padding-bottom: 0.15em;
+    line-height: 1em;
+  }
+  
+  
+  .ml5 .ampersand {
+    font-family: Baskerville, serif;
+    font-style: italic;
+    font-weight: 600;
+    text-align: center;
+    width: 20vh;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+  }
+  
+  .ml5 .letters {
+    display: inline-block;
+    opacity: 0;
+  }
+
+  .workshop{
+    color: #000;
+    font-size: 30px;
+    font-weight: 200;
+    margin-top: 20vh;
+    text-align: center;
+    margin-bottom: -7vh;
+
+  }
+  .workshop h3{
+    margin-bottom: 5vh;
+  }
+  .service-style-three {
+    margin-top: 10vh;
+  }
+  .service-style-three .service-card {
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 2px 20px -5px rgb(146 184 255 / 90%);
+    box-shadow: 0px 2px 20px -5px rgb(255 255 255);
+   overflow:hidden;
+    -webkit-transition: .5s;
+    transition: .5s;
+	position:relative;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.service-img{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  z-index:-1;
+  height:100%;
+  background:url('images/Brand-visibility.jpg');
+  background-position:center center;
+  background-size:cover;
+}
+
+.bigdata{
+   background:url('images/personal-branding.jpg');
+     background-position:center center;
+  background-size:cover;
+}
+
+.machine{
+   background:url('images/public-speaking.jpg');
+     background-position:center center;
+  background-size:cover;
+}
+
+.distributed{
+   background:url('images/CV-writing.jpg');
+     background-position:center center;
+  background-size:cover;
+}
+.capital-pay{
+   background:url('images/presentation-skills.jpg');
+     background-position:center center;
+  background-size:cover;
+}
+.e-tax{
+   background:url('images/professional-etiquette.jpg');
+     background-position:center center;
+  background-size:cover;
+}
+
+.brs{
+    background:url('images/Leadership-skills.jpg');
+      background-position:center center;
+   background-size:cover;
+ }
+
+ .immigration{
+    background:url('images/branding-presence.jpg');
+      background-position:center center;
+   background-size:cover;
+ }
+
+ .health{
+    background:url('images/Job-Interview.jpg');
+      background-position:center center;
+   background-size:cover;
+ }
+.service-style-three .service-card:hover .service-content{
+   background:rgba(0,0,0,0.4);
+}
+
+.service-content{
+background-color: #F6E6C2;
+ padding: 40px 25px 30px 25px;
+ transition:all 1s ease;
+}
+
+.btn:active{
+    text-decoration: none;
+    color: none;
+}
+
+.section-title {
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.service-style-three .service-card img {
+    width: 45px;
+    margin-bottom:19px;
+    z-index: 0;
+    position: relative;
+    -webkit-transition: .5s;
+    transition: .5s;
+    display: inline-block;
+    line-height:1;
+}
+.service-style-three .service-card h3 {
+    font-size: 19px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+
+
+.service-style-three .service-card:hover .service-content img{
+  filter: invert(1);
+}
+.service-style-three .service-card:hover .service-content i{
+    color:#FEFAE0;
+ }
+.service-style-three .service-card:hover .service-content h3{
+   color:#FEFAE0;
+}
+.service-style-three .service-card:hover .service-content p{
+   color:#FEFAE0;
+}
+.service-style-three .service-card:hover .service-content a{
+   color:#FEFAE0;
+   text-decoration: none;
+
+}
+.service-style-three .service-card:hover .service-content a:before{
+   background-color:#fff;
+}
+.service-style-three .service-card p {
+    margin-bottom: 10px;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+.service-style-three .service-card .service-btn {
+    color: #1f1c0c;
+    position: relative;
+}
+.service-style-three .service-card .service-btn::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 2px;
+    bottom: -5px;
+    background: #1f1c0c;
+}
+
+.service-style-three .service-card img:after {
+    position: absolute;
+    content: '';
+    background: #ffea00;
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+    right: -25px;
+    top: -15px;
+    z-index: -1;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+
+
+.modal-fullscreen {
+    width: 500vh;
+    height: 100%;
+    margin: 0;
+    position: absolute;
+  }
+  
+  .modal-fullscreen .modal-content {
+    min-height: 100%;
+    width: 100vh;
+    border: 0;
+    overflow: scroll;
+  }
+
+  .row-service{
+    margin-top: 10vh;
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .service-content1{
+    font-size: 25px;
+    background-color: #F6E6C2;
+ padding: 40px 25px 40px 25px;
+ transition:all 1s ease;
+ color: #000;
+ box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.service-content2{
+    font-size: 25px;
+    background-color: #F6E6C2;
+ padding: 40px 25px 40px 25px;
+ transition:all 1s ease;
+ margin-top: -5vh;
+ color: #000;
+ box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.service-content3{
+    font-size: 25px;
+    background-color: #F6E6C2;
+ padding: 40px 25px 40px 25px;
+ transition:all 1s ease;
+ margin-top: -5vh;
+ color: #000;
+ box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.wave{
+    background-color: #FEFAE0;
+    width: 100%;
+    position: relative;
+    z-index: 0;
+} 
+
+
+.social-media{
+    background-color: #F3DEBA;
+    text-align: center;
+    width: 100%;  
+    position: relative;
+    z-index: 0;
+    display: flex-column;
+    align-items: center;
+    text-align: center;
+    color: #000;
+    font-weight: 200;
+}
+.social-media h2{
+    padding-left: 5vh;
+}
+.social{
+    padding: 50px 20px;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.soc{
+    padding: 50px 40px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border:0px solid #000 ;
+    font-size: 30px;
+}
+.soc i{
+    margin-left: 10vh;
+    background: rgb(255,79,0);
+    background: linear-gradient(90deg, rgba(255,79,0,1) 0%, rgba(255,155,0,1) 77%, rgba(255,181,0,1) 100%);
+    -webkit-background-clip: text; /* Clips the background to the text */
+    color: transparent; /* Makes the actual text color transparent so the gradient shows through */
+    
+}
+.soc-hr{
+    rotate: 90deg;
+    height: 1px;
+    width: 150px;
+    color: black;
+    background: rgb(1, 1, 1);
+    background: linear-gradient(90deg, rgba(255,79,0,1) 0%, rgba(255,155,0,1) 50%, rgba(255,181,0,1) 100%);
+}
+.soc-text {
+    padding: 50px 40px 40px 40px;
+    font-size: 30px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    background: linear-gradient(90deg, rgba(255,79,0,1) 0%, rgba(255,155,0,1) 50%, rgba(255,181,0,1) 100%);
+    -webkit-background-clip: text; /* Clips the background to the text */
+    color: transparent; /* Makes the actual text color transparent so the gradient shows through */
+}
+
+  
+.wave2{
+    background-color: #000;
+    width: 100%;
+    position: relative;
+    z-index: 0;
+} 
+.footer{
+    background-color: #000;
+    width: 100%;
+    color: #FEFAE0;
+    
+    
+}
+.upper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10vh;
+    padding-left: 5vh;
+    padding-right: 8vh;
+}
+.email{
+    font-size: 20px;
+}
+.email i{
+    margin: 10px;
+}
+
+.lower{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1vh;
+    padding-bottom: 3vh;
+}
+.hrfooter{
+    height: 0.03rem;
+    width: 100%;
+    color: black;
+    background:rgb(1, 1, 1);
+    background:linear-gradient(90deg, rgba(255,79,0,1) 0%, rgba(255,155,0,1) 50%, rgba(255,181,0,1) 100%);
+}
+.footer-logo img{
+    width: 80%;
+    height: auto;
+}
+
+
+/* Responsive styles */
+
+@media (max-width: 2560px) {
+.mvc div{
+    height: 10vh;
+}
+.abti1 img{
+width: 20vh;
+}
+.abti2 img{
+    width: 30vh;
+    margin-bottom:10vh ;
+    }
+.soc i{
+    margin-left: 5vh;
+}
+}
+
+@media (max-width: 1600px) {
+    .mvc div{
+        height: inherit;
+    }
+    .abti1 img {
+        width: 30vh;
+        margin-top: 30vh;
+        position: relative; /* Ensures z-index takes effect */
+        z-index: 2; /* Higher z-index value */
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    }
+    
+    .abti2 img {
+        width: 50vh;
+        margin-bottom: 30vh;
+        margin-left: -10vh;
+        position: relative; /* Ensures z-index takes effect */
+        z-index: 1; /* Lower z-index value */
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    }
+
+    .soc i{
+        margin-left: 10vh;
+        background: rgb(255,79,0);
+        background: linear-gradient(90deg, rgba(255,79,0,1) 0%, rgba(255,155,0,1) 77%, rgba(255,181,0,1) 100%);
+        -webkit-background-clip: text; /* Clips the background to the text */
+        color: transparent; /* Makes the actual text color transparent so the gradient shows through */
+        
+    }
+    
+    
+}
+@media (max-width: 1100px) {
+
+    
+   
+.ml5 {
+    position: relative;
+    font-weight: 300;
+    font-size: 4.5em;
+    color: #000;
+  }
+  
+  .ml5 .text-wrapper {
+    position: relative;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    padding-top: 0.1em;
+    padding-right: 0.05em;
+    padding-left: 0.05em;
+    padding-bottom: 0.15em;
+    line-height: 1em;
+  }
+  
+  
+  .ml5 .ampersand {
+    font-family: Baskerville, serif;
+    font-style: italic;
+    font-weight: 600;
+    text-align: center;
+    width: 20vh;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+  }
+  
+  .ml5 .letters {
+    display: inline-block;
+    opacity: 0;
+  } 
+  .arts .p {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 20vh;
+    margin-left: 10vh;
+    margin-right: 10vh;
+}
+.aboutus{
+    background-color: #FEFAE0;
+    padding: 5vh 10vh;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    color: #000;  
+}
+
+.abti1 img {
+    width: 20vh;
+    margin-top: 7vh;
+    position: relative; /* Ensures z-index takes effect */
+    z-index: 2; /* Higher z-index value */
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.abti2 img {
+    width: 40vh;
+    margin-bottom: 40vh;
+    margin-left: -10vh;
+    position: relative; /* Ensures z-index takes effect */
+    z-index: 1; /* Lower z-index value */
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.soc{
+    padding: 30px 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border:0px solid #000 ;
+    font-size: 20px;
+}
+.soc i{
+    margin-left: 6vh;
+    background: rgb(255,79,0);
+    background: linear-gradient(90deg, rgba(255,79,0,1) 0%, rgba(255,155,0,1) 77%, rgba(255,181,0,1) 100%);
+    -webkit-background-clip: text; /* Clips the background to the text */
+    color: transparent; /* Makes the actual text color transparent so the gradient shows through */
+    
+}
+.soc-text {
+    padding: 20px 20px 20px 20px;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    background: linear-gradient(90deg, rgba(255,79,0,1) 0%, rgba(255,155,0,1) 50%, rgba(255,181,0,1) 100%);
+    -webkit-background-clip: text; /* Clips the background to the text */
+    color: transparent; /* Makes the actual text color transparent so the gradient shows through */
+}
+
+
+}
+
+@media (max-width: 900px) {
+    .title {
+        font-size: 36px;
+    }
+    
+    .motto {
+        font-size: 18px;
+    }
+
+    
+.logo img {
+    width: 40%;
+    height: auto;
+    margin-left: 5vh;
+}
+
+    .navbar {
+        position: sticky;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        background: rgba(0, 0, 0, 0.7);
+        margin-bottom: -10vh;
+        backdrop-filter: blur(5px); /* Optional: for a blurred background effect */
+    }
+    
+    .navbar.solid {
+        background-color: black; /* Solid black background when scrolled */
+    }
+    
+    
+    .logo img {
+        width: 40%;
+        height: auto;
+    }
+    
+    .nav {
+        display: flex;
+        list-style: none;
+        padding: 0px;
+        margin-right: 0px;
+    }
+    
+    .navlink a{
+        margin-left: 0px;
+        cursor: pointer;
+        color: #fff;
+        padding: 8px 20px;
+        border-radius: 10px;
+        transition: 0.4s ease;
+    }
+    
+    .navlink a:hover {
+        color: orange;
+        border: 1px solid orange;
+        text-decoration: none;
+    }
+    #menu-toggle{
+        display: none;
+    }
+
+
+    .arts .p{
+        font-size: 20px;
+        margin-bottom: 20vh;
+        margin-left: 5vh;
+        margin-right: 5vh;
+    }
+   
+
+    .mvc {
+        flex-direction: column;
+    }
+
+    .mvc div {
+        margin-bottom: 20px;
+    }
+    .mvc .mvcp{
+        font-size: 18px;
+    }
+
+    .mvc .mvch{
+        font-size: 20px;
+    }
+
+    .aboutus p{
+        font-size: 18px;
+    }
+
+    .aboutus h2{
+        font-size: 25px;
+    }
+
+   
+    .ml5 {
+        font-size: 3.5em;
+      }
+      .ml5 .ampersand {
+        margin-right: 0.09em;
+        margin-left: 0.09em;
+      }
+
+      .service-content1{
+        font-size: 15px;
+        background-color: #F6E6C2;
+     padding: 40px 25px 40px 25px;
+     transition:all 1s ease;
+     color: #000;
+     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+    .service-content2{
+        font-size: 15px;
+        background-color: #F6E6C2;
+     padding: 40px 25px 40px 25px;
+     transition:all 1s ease;
+     margin-top: 5vh;
+     color: #000;
+     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+    .service-content3{
+        font-size: 15px;
+        background-color: #F6E6C2;
+     padding: 40px 25px 40px 25px;
+     transition:all 1s ease;
+     margin-top: 5vh;
+     color: #000;
+     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+
+    .services{
+        background-color: #FEFAE0;
+        padding: 2vh 5vh;
+        text-align: center;
+        width: 100%;
+        position: relative;
+        z-index: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: justify;
+    }
+    
+
+    .workshop{
+        color: #000;
+        font-size: 20px;
+        font-weight: 200;
+        margin-top: 20vh;
+        text-align: center;
+        margin-bottom: -7vh;
+    
+      }
+      .workshop h3{
+        margin-bottom: 5vh;
+      }
+
+    .soc{
+        padding: 10px 5px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        border:0px solid #000 ;
+        font-size: 25px;
+    }
+    .soc i{
+        margin-left: 5vh;
+        background: rgb(255,79,0);
+        background: linear-gradient(90deg, rgba(255,79,0,1) 0%, rgba(255,155,0,1) 77%, rgba(255,181,0,1) 100%);
+        -webkit-background-clip: text; /* Clips the background to the text */
+        color: transparent; /* Makes the actual text color transparent so the gradient shows through */
+        
+    }
+
+    .soc-text {
+        padding: 20px 10px 10px 10px;
+        font-size: 15px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        font-weight: 500;
+        background: linear-gradient(90deg, rgba(255,79,0,1) 0%, rgba(255,155,0,1) 50%, rgba(255,181,0,1) 100%);
+        -webkit-background-clip: text; /* Clips the background to the text */
+        color: transparent; /* Makes the actual text color transparent so the gradient shows through */
+}
+
+.soc-hr{
+    rotate: 90deg;
+    height: 1px;
+    width: 80px;
+    color: black;
+    background: rgb(1, 1, 1);
+    background: linear-gradient(90deg, rgba(255,79,0,1) 0%, rgba(255,155,0,1) 50%, rgba(255,181,0,1) 100%);
+}
+
+.email{
+    font-size: 15px;
+}
+.email i{
+    margin: 10px;
+}
+
+.copy{
+    font-size: 15px;
+}
+
+}
+
+@media (max-width: 480px) {
+
+    .hamburger-menu {
+        position: relative;
+    }
+    
+    .menu-icon {
+        display: block;
+        width: 30px;
+        height: 21px;
+        cursor: pointer;
+        margin: 10px;
+    }
+    
+    .bar {
+        height: 3px;
+        width: 30px;
+        background-color: #fff;
+        margin: 3px 0;
+        transition: 0.3s;
+    }
+    
+    /* Hide the nav menu by default */
+    .nav {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        list-style: none;
+        padding: 10px;
+    }
+    
+    .nav-link {
+        color: #fff;
+        text-decoration: none;
+        margin-bottom: 10vh;
+        display: block;
+    }
+
+    .navlink a:hover {
+        color: orange;
+        border: 0px solid orange;
+        text-decoration: none;
+    }
+    #menu-toggle{
+        display: none;
+    }
+    
+    
+    /* Rotate bars when menu is open */
+    .menu-icon.open .bar:nth-child(1) {
+        transform: rotate(-45deg);
+        margin: 0;
+    }
+    
+    .menu-icon.open .bar:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .menu-icon.open .bar:nth-child(3) {
+        transform: rotate(45deg);
+        margin: 0;
+    }
+
+    .nav.show {
+        display:inline-block;
+    }
+    .show > .navbar{
+        display: flex-column;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    .ml5 {
+        font-size: 1.5em;
+      }
+      .ml5 .ampersand {
+        margin-right: 0.09em;
+        margin-left: 0.09em;
+      }
+
+      .abt{
+        display: block;
+    }
+
+    .abtpic{
+        margin-bottom: 0vh;
+        margin-top: 7vh;
+    }
+
+    .abti1 img {
+        width: 20vh;
+        margin-top: 10vh;
+        position: relative; /* Ensures z-index takes effect */
+        z-index: 2; /* Higher z-index value */
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    }
+    
+    .abti2 img {
+        width: 40vh;
+        margin-bottom: 30vh;
+        margin-left: -10vh;
+        position: relative; /* Ensures z-index takes effect */
+        z-index: 1; /* Lower z-index value */
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    }
+
+    .soc{
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        border:0px solid #000 ;
+        font-size: 15px;
+        margin-left: 5vh;
+        margin-right: -15vh;
+    }
+    .soc i{
+       
+        margin-left: 5px;
+        background: rgb(255,79,0);
+        background: linear-gradient(90deg, rgba(255,79,0,1) 0%, rgba(255,155,0,1) 77%, rgba(255,181,0,1) 100%);
+        -webkit-background-clip: text; /* Clips the background to the text */
+        color: transparent; /* Makes the actual text color transparent so the gradient shows through */
+        
+    }
+
+    .soc-text {
+        margin-top: 10px;
+        margin-right: 0vh;
+        margin-left: -15vh;
+        padding: 0px;
+        font-size: 10px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        font-weight: 500;
+        background: linear-gradient(90deg, rgba(255,79,0,1) 0%, rgba(255,155,0,1) 50%, rgba(255,181,0,1) 100%);
+        -webkit-background-clip: text; /* Clips the background to the text */
+        color: transparent; /* Makes the actual text color transparent so the gradient shows through */
+}
+
+.soc-hr{
+    rotate: 90deg;
+    height: 1px;
+    width: 80px;
+    color: black;
+    background: rgb(1, 1, 1);
+    background: linear-gradient(90deg, rgba(255,79,0,1) 0%, rgba(255,155,0,1) 50%, rgba(255,181,0,1) 100%);
+}
+
+.email{
+    font-size: 15px;
+}
+.email i{
+    margin: 10px;
+}
+
+.copy{
+    font-size: 15px;
+}
+.upper{
+    display: inline;
+}
+
+.footer-logo img{
+    width: 30%;
+}
+}
+
+
+
+
