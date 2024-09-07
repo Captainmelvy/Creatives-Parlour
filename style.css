@@ -1111,11 +1111,11 @@ width: 20vh;
     }
 
     .ml5 {
-        font-size: 1.5em;
+        font-size: 1.2em;
       }
       .ml5 .ampersand {
-        margin-right: 0.09em;
-        margin-left: 0.09em;
+        margin-right: 0.03em;
+        margin-left: 0.03em;
       }
 
       .abt{
@@ -1124,15 +1124,16 @@ width: 20vh;
 
     .abtpic{
         margin-bottom: 0vh;
-        margin-top: 7vh;
-	display:inline;
-	
+        margin-top: 0vh;
+        display: block;
     }
 
     .abti1 img {
         width: 20vh;
+        margin-left: 13vh;
+        margin-bottom: 3vh;
         position: relative; /* Ensures z-index takes effect */
-        z-index: 2; /* Higher z-index value */
+        z-index: 1; /* Higher z-index value */
         box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
     }
     
@@ -1141,8 +1142,30 @@ width: 20vh;
         position: relative; /* Ensures z-index takes effect */
         z-index: 1; /* Lower z-index value */
         box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        margin-left: 2vh;
+    }
+    .abtp .abtp1 {
+        margin-top: 0vh;
+        margin-left: 0vh;
+    }
+    .abtp .abtp2 {
+        margin-top: 0vh;
+        margin-left: 0vh;
     }
 
+    .aboutus{
+        background-color: #FEFAE0;
+        padding: 5vh 5vh;
+        text-align: center;
+        width: 100%;
+        position: relative;
+        z-index: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: justify;
+        color: #000;  
+    }
     .soc{
         text-align: center;
         align-items: center;
