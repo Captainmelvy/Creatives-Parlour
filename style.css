@@ -411,6 +411,7 @@ body, html {
  }
 .service-style-three .service-card:hover .service-content{
    background:rgba(0,0,0,0.4);
+   cursor: pointer;
 }
 
 .service-content{
