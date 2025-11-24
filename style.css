@@ -642,6 +642,7 @@ background-color: #F6E6C2;
     padding-right: 8vh;
 }
 .email{
+    width: 60%;
     font-size: 20px;
 }
 .email i{
@@ -663,7 +664,7 @@ background-color: #F6E6C2;
     background:linear-gradient(90deg, rgba(255,79,0,1) 0%, rgba(255,155,0,1) 50%, rgba(255,181,0,1) 100%);
 }
 .footer-logo img{
-    width: 80%;
+    width: 40%;
     height: auto;
 }
 
